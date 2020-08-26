@@ -219,7 +219,7 @@ class Media implements AppInterface
      */
     private function getOriginalImage(string $resizedImagePath): string
     {
-        return preg_replace('|^.*((?:/[^/]+){3})$|', '$1', $resizedImagePath);
+        return preg_replace('|^.*((?:/[^/]+){4})$|', '$1', $resizedImagePath);
     }
 
     /**
